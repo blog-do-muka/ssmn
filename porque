@@ -1,0 +1,45 @@
+porque.html
+<!-- porque.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Por que criei o Blog do Muka</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Blog do Muka</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="postagens.html">Postagens</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="denuncie.html">Denuncie</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Por que criei este blog?</h2>
+    <p>Porque minha cidade está cheia de propaganda, mas vazia de verdade.</p>
+    <p>Porque portais de “notícia” são comprados com dinheiro público para divulgar o que convém aos poderosos, não ao povo.</p>
+    <p>Porque o povo merece saber como funcionam os contratos, licitações, leis e jogadas políticas que afetam o dia a dia de quem mais precisa.</p>
+    <p>Porque eu acredito que política não é só pra quem tem cargo, é pra quem tem coragem. E o Blog do Muka é meu compromisso com a verdade — mesmo quando ela incomoda.</p>
+    <p>Se você chegou até aqui, é porque também está cansado de ser enganado. Então seja bem-vindo. Aqui, <strong>ninguém passa pano</strong>.</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Blog do Muka. Todos os direitos reservados.</p>
+    <p>Siga:
+      <a href="https://instagram.com/seuusuario" target="_blank">Instagram</a> |
+      <a href="https://facebook.com/seupagina" target="_blank">Facebook</a> |
+      <a href="https://wa.me/55SEUNUMERO" target="_blank">WhatsApp</a>
+    </p>
+  </footer>
+</body>
+</html>
