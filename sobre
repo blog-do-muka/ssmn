@@ -1,0 +1,46 @@
+sabre.html
+<!-- sobre.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre o Muka</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Blog do Muka</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="postagens.html">Postagens</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="denuncie.html">Denuncie</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Quem é o Muka?</h2>
+      <p>Sou Samuel Sleiman Mouchaileh Neto, mas muita gente me conhece como Muka. Nasci e cresci em Ponta Grossa (PR) e há mais de uma década estou envolvido em causas sociais, projetos comunitários e iniciativas pela transparência na política.</p>
+      <p>Já trabalhei em cargos públicos, fui coordenador de projetos sociais e conheço por dentro a máquina pública. Mas o que me move é algo maior: a luta por uma política verdadeira, acessível e voltada para o povo.</p>
+      <p>Criei este blog para mostrar o que muitos escondem. Aqui você vai encontrar análises, denúncias, bastidores e, acima de tudo, <strong>a verdade que não se compra</strong>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Blog do Muka. Todos os direitos reservados.</p>
+    <p>Siga:
+      <a href="https://instagram.com/seuusuario" target="_blank">Instagram</a> |
+      <a href="https://facebook.com/seupagina" target="_blank">Facebook</a> |
+      <a href="https://wa.me/55SEUNUMERO" target="_blank">WhatsApp</a>
+    </p>
+  </footer>
+</body>
+</html>
+Adicionando página sobre.html
