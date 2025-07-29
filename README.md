@@ -1,4 +1,7 @@
+
 # 🗳️ Blog do Muka – Política com Coragem e Consciência
+
+![Capa do Blog do Muka](imagens/index-capa-girassol.png)
 
 Este é o repositório oficial do **Blog do Muka**, uma plataforma independente criada para informar, questionar e conscientizar a população sobre os bastidores da política em Ponta Grossa, no Paraná e no Brasil.
 
@@ -28,11 +31,11 @@ A proposta do Blog do Muka é:
 
 - `index.html` — Página inicial com banner e introdução
 - `postagens.html` — Lista com todos os artigos publicados
-- `post1.html`, `post2.html`, ... — Artigos individuais com temas como contratos de mídia, funcionamento da Câmara, etc.
+- `post1.html`, `post2.html`, ... — Artigos individuais
 - `sobre.html` — Quem é o Muka e por que esse projeto existe
 - `contato.html`, `denuncie.html` — Canais de escuta ativa
-- `imagens/` — Pasta com artes visuais e banners
-- `style.css` — Folha de estilo do blog
+- `style.css` — Visual moderno com roxo como destaque
+- `imagens/` — Artes, ícones e banners
 
 ---
 
@@ -44,7 +47,7 @@ Você pode colaborar com:
 - Correções e melhorias de código
 - Compartilhamento consciente nas redes
 
-💌 Envie sugestões para [smouchaileh@gmail.com](mailto:smouchaileh@gmail.com)
+💌 Contato: [smouchaileh@gmail.com](mailto:smouchaileh@gmail.com)
 
 ---
 
@@ -63,4 +66,4 @@ Todos os conteúdos devem ser utilizados com ética e respeito ao contexto origi
 
 ---
 
-**Blog do Muka – A verdade sem rabo preso.**
+**Blog do Muka – Informação que constrói consciência.**
