@@ -6,9 +6,6 @@
   <title>Postagens – Blog do Muka</title>
   <link rel="stylesheet" href="estilo.css" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
     .tags-menu {
       margin: 20px 0;
       text-align: center;
@@ -68,22 +65,26 @@
     </div>
   </header>
 
+  <!-- Campo de busca por palavra-chave -->
+  <div style="text-align:center; margin-top: 20px;">
+    <input type="text" id="searchInput" placeholder="Buscar post por palavra-chave..." style="padding:8px; width:60%; border:1px solid #ccc; border-radius:6px;">
+  </div>
+
+  <!-- Filtros por categoria -->
+  <div class="tags-menu">
+    <button class="filter-btn active" data-filter="all">Todos</button>
+    <button class="filter-btn" data-filter="Opinião">Opinião</button>
+    <button class="filter-btn" data-filter="Transparência">Transparência</button>
+    <button class="filter-btn" data-filter="Legislação">Legislação</button>
+    <button class="filter-btn" data-filter="Saúde">Saúde</button>
+    <button class="filter-btn" data-filter="Fiscalização">Fiscalização</button>
+    <button class="filter-btn" data-filter="Impostos">Impostos</button>
+    <button class="filter-btn" data-filter="Editorial">Editorial</button>
+  </div>
+
   <main class="container">
     <h2>Postagens recentes</h2>
 
-    <!-- Filtros por categoria -->
-    <div class="tags-menu">
-      <button class="filter-btn active" data-filter="all">Todos</button>
-      <button class="filter-btn" data-filter="Opinião">Opinião</button>
-      <button class="filter-btn" data-filter="Transparência">Transparência</button>
-      <button class="filter-btn" data-filter="Legislação">Legislação</button>
-      <button class="filter-btn" data-filter="Saúde">Saúde</button>
-      <button class="filter-btn" data-filter="Fiscalização">Fiscalização</button>
-      <button class="filter-btn" data-filter="Impostos">Impostos</button>
-      <button class="filter-btn" data-filter="Editorial">Editorial</button>
-    </div>
-
-    <!-- POSTS -->
     <div class="post" data-tags="Opinião Transparência">
       <a href="post1.html">
         <h3>Quem você elegeu... não ficou</h3>
@@ -150,9 +151,11 @@
     </p>
   </footer>
 
+  <!-- Scripts de filtro por tag e busca -->
   <script>
     const buttons = document.querySelectorAll(".filter-btn");
     const posts = document.querySelectorAll(".post");
+    const searchInput = document.getElementById("searchInput");
 
     buttons.forEach(btn => {
       btn.addEventListener("click", () => {
@@ -168,6 +171,18 @@
             post.classList.add("hidden");
           }
         });
+      });
+    });
+
+    searchInput.addEventListener("keyup", function () {
+      const filter = searchInput.value.toLowerCase();
+      posts.forEach(post => {
+        const text = post.textContent.toLowerCase();
+        if (text.includes(filter)) {
+          post.classList.remove("hidden");
+        } else {
+          post.classList.add("hidden");
+        }
       });
     });
   </script>
