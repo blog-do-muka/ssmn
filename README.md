@@ -23,7 +23,7 @@ A proposta do Blog do Muka é:
 
 ## 🌐 Acesse o blog
 
-👉 [https://blog-do-muka.github.io/ssmn](https://blog-do-muka.github.io/ssmn)
+👉 [https://blogdomuka.com.br](https://blogdomuka.com.br)
 
 ---
 
