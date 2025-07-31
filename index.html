@@ -1,176 +1,71 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Blog do Muka</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #f5f5f5;
-      color: #333;
+      background-color: #f9f9f9;
+      text-align: center;
     }
 
     header {
-      background: linear-gradient(to right, #0f62fe, #a56de2);
+      background-color: #1f1f1f;
+      padding: 20px 0;
+    }
+
+    nav a {
       color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    header img {
-      max-width: 200px;
-      border-radius: 50%;
-      margin: 10px auto;
-      display: block;
-    }
-
-    nav.nav-links {
-      margin-top: 15px;
-    }
-
-    nav.nav-links a {
-      color: white;
-      margin: 0 12px;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
     }
 
-    nav.nav-links a:hover {
-      text-decoration: underline;
-    }
-
-    .hero-text {
-      font-size: 2.5rem;
-      font-weight: bold;
-      margin: 10px 0;
-    }
-
-    .subtext {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
-    }
-
-    .btn {
-      background-color: #00b0ff;
-      color: white;
-      padding: 12px 25px;
-      border: none;
-      border-radius: 25px;
-      font-size: 1rem;
-      cursor: pointer;
-      text-decoration: none;
-    }
-
-    .posts-section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .posts-section h2 {
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 30px;
-    }
-
-    .post-card {
-      background-color: white;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      margin-bottom: 30px;
-      border-radius: 8px;
-      overflow: hidden;
-      transition: transform 0.2s;
-    }
-
-    .post-card:hover {
-      transform: scale(1.01);
-    }
-
-    .post-card img {
+    .banner img {
       width: 100%;
+      max-width: 100%;
       height: auto;
       display: block;
     }
 
-    .post-card h3 {
-      margin: 15px;
-      font-size: 1.3rem;
-    }
-
-    .post-card h3 a {
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background-color: #00bfff;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 18px;
+      font-weight: bold;
       text-decoration: none;
-      color: #000;
+      transition: background-color 0.3s ease;
     }
 
-    .post-card h3 a:hover {
-      text-decoration: underline;
-    }
-
-    footer {
-      background-color: #eee;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #555;
-    }
-
-    @media (max-width: 600px) {
-      .hero-text {
-        font-size: 2rem;
-      }
-
-      .subtext {
-        font-size: 1rem;
-      }
-
-      nav.nav-links a {
-        display: block;
-        margin: 8px 0;
-      }
+    .btn:hover {
+      background-color: #008fd1;
     }
   </style>
 </head>
 <body>
 
-  <header id="inicio">
-    <img src="imagens/index-capa%20blog-do-muka%201.png" alt="Capa Blog do Muka">
-    <nav class="nav-links">
+  <header>
+    <nav>
       <a href="#inicio">Início</a>
       <a href="#sobre">Sobre</a>
       <a href="#postagens">Postagens</a>
-      <a href="https://forms.gle/seuFormularioContato" target="_blank">Contato</a>
-      <a href="https://forms.gle/seuFormularioDenuncia" target="_blank">Denuncie</a>
+      <a href="https://forms.gle/SEU-LINK-DE-CONTATO" target="_blank">Contato</a>
+      <a href="https://forms.gle/SEU-LINK-DE-DENUNCIA" target="_blank">Denuncie</a>
     </nav>
-    <div class="hero-text">conecte-se aqui</div>
-    <div class="subtext">Mais do que opinião. Um universo de consciência política.</div>
-    <a class="btn" href="https://forms.gle/seuFormularioInscricao" target="_blank">Inscreva-se</a>
   </header>
 
-  <section id="postagens" class="posts-section">
-    <h2>Posts Recentes</h2>
-
-    <div class="post-card">
-      <img src="imagens/post1.jpg" alt="Post 1">
-      <h3><a href="post1.html">Quem você elegeu... não ficou</a></h3>
-    </div>
-
-    <div class="post-card">
-      <img src="imagens/post2.jpg" alt="Post 2">
-      <h3><a href="post2.html">Vereadores que viram secretários — bom para quem?</a></h3>
-    </div>
-
-    <div class="post-card">
-      <img src="imagens/post3.jpg" alt="Post 3">
-      <h3><a href="post3.html">Como votar bem em 2024: guia rápido</a></h3>
-    </div>
+  <section class="banner">
+    <img src="imagens/index-capa-blog-do-muka.png" alt="Capa do Blog do Muka" />
+    <a class="btn" href="https://forms.gle/SEU-LINK-DE-INSCRICAO" target="_blank">Inscreva-se</a>
   </section>
-
-  <footer>
-    © 2025 Blog do Muka. Todos os direitos reservados.
-  </footer>
 
 </body>
 </html>
-
