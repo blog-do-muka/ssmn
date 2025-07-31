@@ -10,12 +10,22 @@
       background-color: #f4f4f4;
     }
 
-    .post {
+    .post, .post-card {
       background-color: white;
       padding: 20px;
       margin-bottom: 20px;
       border-radius: 8px;
       box-shadow: 0px 0px 8px rgba(0,0,0,0.1);
+      text-decoration: none;
+      color: #333;
+      display: block;
+    }
+
+    .post-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
     }
 
     .post a {
@@ -24,20 +34,32 @@
       font-weight: bold;
       font-size: 20px;
     }
+
+    .post-card h3 {
+      margin: 10px 0 5px;
+      font-size: 20px;
+    }
+
+    .post-card p {
+      font-size: 16px;
+    }
   </style>
 </head>
 <body>
   <h1>Postagens recentes</h1>
 
+  <!-- Post 1 -->
   <div class="post">
     <a href="posts/quem-voce-elegeu.html">Quem você elegeu... não ficou</a>
     <p>Uma análise crítica sobre cargos assumidos por quem não foi eleito...</p>
   </div>
 
-  <div class="post">
-    <a href="posts/nova-lei-da-fibromialgia.html">Nova lei da Fibromialgia aprovada!</a>
-    <p>Vitória do Grupo Fibroviva com a Lei nº 15.176/2025.</p>
-  </div>
+  <!-- Post 4 -->
+  <a href="posts/post4.html" class="post-card">
+    <img src="imagens/fibro-thumbnail.jpg" alt="Imagem sobre a fibromialgia" />
+    <h3>Vitória do Grupo Fibroviva – Lei da Fibromialgia</h3>
+    <p>Reconhecimento legal da fibromialgia é aprovado em 2025. Uma vitória da empatia e da mobilização.</p>
+  </a>
 
 </body>
 </html>
