@@ -5,6 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Postagens – Blog do Muka</title>
   <link rel="stylesheet" href="estilo.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .tags-menu {
+      margin: 20px 0;
+      text-align: center;
+    }
+    .tags-menu .filter-btn {
+      display: inline-block;
+      margin: 5px;
+      padding: 6px 12px;
+      background-color: #e0e0e0;
+      color: #333;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 13px;
+      border: none;
+    }
+    .tags-menu .filter-btn.active {
+      background-color: #3d2c8d;
+      color: white;
+    }
+    .post {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 12px;
+      margin-bottom: 16px;
+      background-color: #f9f9f9;
+    }
+    .post h3 { margin: 0; }
+    .post p { margin: 6px 0; }
+    .tags {
+      margin-top: 6px;
+    }
+    .tag {
+      display: inline-block;
+      background-color: #ddd;
+      color: #333;
+      font-size: 12px;
+      padding: 3px 8px;
+      margin-right: 5px;
+      border-radius: 12px;
+    }
+    .hidden { display: none; }
+  </style>
 </head>
 <body>
   <header>
@@ -25,52 +71,72 @@
   <main class="container">
     <h2>Postagens recentes</h2>
 
-    <div class="post">
+    <!-- Filtros por categoria -->
+    <div class="tags-menu">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="Opinião">Opinião</button>
+      <button class="filter-btn" data-filter="Transparência">Transparência</button>
+      <button class="filter-btn" data-filter="Legislação">Legislação</button>
+      <button class="filter-btn" data-filter="Saúde">Saúde</button>
+      <button class="filter-btn" data-filter="Fiscalização">Fiscalização</button>
+      <button class="filter-btn" data-filter="Impostos">Impostos</button>
+      <button class="filter-btn" data-filter="Editorial">Editorial</button>
+    </div>
+
+    <!-- POSTS -->
+    <div class="post" data-tags="Opinião Transparência">
       <a href="post1.html">
         <h3>Quem você elegeu... não ficou</h3>
         <p>Uma análise crítica sobre cargos assumidos por quem não foi eleito.</p>
+        <div class="tags"><span class="tag">Opinião</span><span class="tag">Transparência</span></div>
       </a>
     </div>
 
-    <div class="post">
+    <div class="post" data-tags="Legislação Cidadania">
       <a href="post2.html">
         <h3>O que acontece quando um projeto é aprovado?</h3>
         <p>Entenda os bastidores da execução pública após votações legislativas.</p>
+        <div class="tags"><span class="tag">Legislação</span><span class="tag">Cidadania</span></div>
       </a>
     </div>
 
-    <div class="post">
+    <div class="post" data-tags="Editorial Motivação">
       <a href="post3.html">
         <h3>Por que criei o Blog do Muka?</h3>
         <p>Reflexão pessoal e propósito deste espaço de consciência política.</p>
+        <div class="tags"><span class="tag">Editorial</span><span class="tag">Motivação</span></div>
       </a>
     </div>
 
-    <div class="post">
+    <div class="post" data-tags="Saúde Direitos">
       <a href="post4.html">
         <h3>Vitória do Grupo Fibroviva – Lei da Fibromialgia</h3>
         <p>Reconhecimento legal da fibromialgia é aprovado em 2025. Empatia e mobilização.</p>
+        <div class="tags"><span class="tag">Saúde</span><span class="tag">Direitos</span></div>
       </a>
     </div>
 
-    <div class="post">
+    <div class="post" data-tags="Fiscalização Comunicação">
       <a href="post5.html">
-        <h3>Desvendando os contratos de mídia em Ponta Grossa</h3>
-        <p>Como recursos públicos podem influenciar o que é (ou não é) publicado.</p>
+        <h3>Contratos de mídia em Ponta Grossa</h3>
+        <p>Como recursos públicos influenciam o que é (ou não é) divulgado.</p>
+        <div class="tags"><span class="tag">Fiscalização</span><span class="tag">Comunicação</span></div>
       </a>
     </div>
 
-    <div class="post">
+    <div class="post" data-tags="Impostos Política local">
       <a href="post6.html">
-        <h3>Aumento do IPTU e TBI em Ponta Grossa</h3>
+        <h3>Aumento do IPTU e TBI</h3>
         <p>Projeto polêmico aprovado em sessão relâmpago. O que muda para você?</p>
+        <div class="tags"><span class="tag">Impostos</span><span class="tag">Política local</span></div>
       </a>
     </div>
 
-    <div class="post">
+    <div class="post" data-tags="Verbas públicas Bastidores">
       <a href="post7.html">
-        <h3>De onde vem os valores que financiam a política?</h3>
+        <h3>De onde vêm os valores que financiam a política?</h3>
         <p>Um olhar sobre emendas, articulações e interesses por trás da governabilidade.</p>
+        <div class="tags"><span class="tag">Verbas públicas</span><span class="tag">Bastidores</span></div>
       </a>
     </div>
   </main>
@@ -83,5 +149,27 @@
       <a href="https://wa.me/5542998340012" target="_blank">WhatsApp</a>
     </p>
   </footer>
+
+  <script>
+    const buttons = document.querySelectorAll(".filter-btn");
+    const posts = document.querySelectorAll(".post");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.querySelector(".filter-btn.active").classList.remove("active");
+        btn.classList.add("active");
+        const filter = btn.getAttribute("data-filter");
+
+        posts.forEach(post => {
+          const tags = post.getAttribute("data-tags");
+          if (filter === "all" || tags.includes(filter)) {
+            post.classList.remove("hidden");
+          } else {
+            post.classList.add("hidden");
+          }
+        });
+      });
+    });
+  </script>
 </body>
 </html>
