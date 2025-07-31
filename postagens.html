@@ -1,128 +1,87 @@
-<!-- postagens.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Postagens – Blog do Muka</title>
-  <link rel="stylesheet" href="style.css"/>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-    }
-    header, footer {
-      background-color: #3d2c8d;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav ul {
-      list-style: none;
-      padding: 0;
-      margin: 1rem 0 0;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .container {
-      padding: 2rem;
-    }
-    .post-card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-bottom: 2rem;
-      overflow: hidden;
-      text-decoration: none;
-      color: black;
-      display: flex;
-      flex-direction: column;
-    }
-    .post-card img {
-      width: 100%;
-      height: auto;
-    }
-    .post-card h3 {
-      margin: 1rem;
-    }
-    .post-card p {
-      margin: 0 1rem 1rem;
-    }
-    @media (min-width: 600px) {
-      .post-card {
-        flex-direction: row;
-      }
-      .post-card img {
-        width: 200px;
-        height: auto;
-      }
-      .post-card-content {
-        padding: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="estilo.css" />
 </head>
 <body>
   <header>
-    <h1>Blog do Muka</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="postagens.html">Postagens</a></li>
-        <li><a href="contato.html">Contato</a></li>
-        <li><a href="denuncie.html">Denuncie</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1>Blog do Muka</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="postagens.html">Postagens</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="denuncie.html">Denuncie</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main class="container">
     <h2>Postagens recentes</h2>
 
-    <a class="post-card" href="post1.html">
-      <img src="post1.jpg" alt="Imagem Post 1"/>
-      <div class="post-card-content">
-        <h3>Quem você elegeu… não ficou</h3>
+    <div class="post">
+      <a href="post1.html">
+        <h3>Quem você elegeu... não ficou</h3>
         <p>Uma análise crítica sobre cargos assumidos por quem não foi eleito.</p>
-      </div>
-    </a>
+      </a>
+    </div>
 
-    <a class="post-card" href="post2.html">
-      <img src="post2.jpg" alt="Imagem Post 2"/>
-      <div class="post-card-content">
-        <h3>O que os diários oficiais não contam</h3>
-        <p>Erros, omissões e contradições que passam despercebidas pela população.</p>
-      </div>
-    </a>
+    <div class="post">
+      <a href="post2.html">
+        <h3>O que acontece quando um projeto é aprovado?</h3>
+        <p>Entenda os bastidores da execução pública após votações legislativas.</p>
+      </a>
+    </div>
 
-    <a class="post-card" href="post3.html">
-      <img src="post3.jpg" alt="Imagem Post 3"/>
-      <div class="post-card-content">
-        <h3>Uma cidade governada pelo silêncio</h3>
-        <p>Por que tantos têm medo de falar? Reflexões sobre transparência e censura velada.</p>
-      </div>
-    </a>
+    <div class="post">
+      <a href="post3.html">
+        <h3>Por que criei o Blog do Muka?</h3>
+        <p>Reflexão pessoal e propósito deste espaço de consciência política.</p>
+      </a>
+    </div>
 
-    <a class="post-card" href="post4.html">
-      <img src="post4.jpg" alt="Imagem Post 4"/>
-      <div class="post-card-content">
+    <div class="post">
+      <a href="post4.html">
         <h3>Vitória do Grupo Fibroviva – Lei da Fibromialgia</h3>
-        <p>Reconhecimento legal da fibromialgia é aprovado em 2025. Uma vitória da empatia e da mobilização.</p>
-      </div>
-    </a>
+        <p>Reconhecimento legal da fibromialgia é aprovado em 2025. Empatia e mobilização.</p>
+      </a>
+    </div>
+
+    <div class="post">
+      <a href="post5.html">
+        <h3>Desvendando os contratos de mídia em Ponta Grossa</h3>
+        <p>Como recursos públicos podem influenciar o que é (ou não é) publicado.</p>
+      </a>
+    </div>
+
+    <div class="post">
+      <a href="post6.html">
+        <h3>Aumento do IPTU e TBI em Ponta Grossa</h3>
+        <p>Projeto polêmico aprovado em sessão relâmpago. O que muda para você?</p>
+      </a>
+    </div>
+
+    <div class="post">
+      <a href="post7.html">
+        <h3>De onde vem os valores que financiam a política?</h3>
+        <p>Um olhar sobre emendas, articulações e interesses por trás da governabilidade.</p>
+      </a>
+    </div>
   </main>
 
   <footer>
     <p>&copy; 2025 Blog do Muka. Todos os direitos reservados.</p>
+    <p>Siga:
+      <a href="https://instagram.com/samuelsleiman" target="_blank">Instagram</a> |
+      <a href="https://facebook.com/CidadedePontaGrossa" target="_blank">Facebook</a> |
+      <a href="https://wa.me/5542998340012" target="_blank">WhatsApp</a>
+    </p>
   </footer>
 </body>
 </html>
