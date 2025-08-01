@@ -1,7 +1,7 @@
 
 # 🗳️ Blog do Muka – Política com Coragem e Consciência
 
-![Capa do Blog do Muka](imagens/index-capa-blog-do-muka.png)
+![Capa do Blog do Muka](imagens/index-capa2-blog-do-muka.png)
 
 Este é o repositório oficial do **Blog do Muka**, uma plataforma independente criada para informar, questionar e conscientizar a população sobre os bastidores da política em Ponta Grossa, no Paraná e no Brasil.
 
