@@ -2,83 +2,175 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Blog do Muka</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog do Muka – transparência política em Ponta Grossa</title>
+  <meta name="description" content="Análises independentes, denúncias e opinião sobre política local de Ponta Grossa. Conheça os bastidores da gestão pública e participe da mudança." />
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #f9f9f9;
-      text-align: center;
+      color: #333;
     }
-
     header {
       background-color: #1f1f1f;
       padding: 20px 0;
+      text-align: center;
     }
-
     nav a {
       color: white;
       text-decoration: none;
       margin: 0 15px;
       font-weight: bold;
     }
-
+    .banner {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #fff;
+    }
     .banner img {
       width: 100%;
       max-width: 100%;
       height: auto;
       display: block;
+      border-radius: 10px;
     }
-
+    .banner h2 {
+      margin-top: 20px;
+      font-size: 2rem;
+      color: #3d2c8d;
+    }
+    .banner p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      line-height: 1.5;
+      max-width: 720px;
+      margin-left: auto;
+      margin-right: auto;
+    }
     .btn {
       display: inline-block;
-      margin-top: 20px;
+      margin: 15px 10px 0 10px;
       padding: 12px 25px;
       background-color: #00bfff;
       color: white;
       border: none;
       border-radius: 25px;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: bold;
       text-decoration: none;
       transition: background-color 0.3s ease;
     }
-
     .btn:hover {
       background-color: #008fd1;
     }
-
+    .latest-posts {
+      background-color: #f5f5f5;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .latest-posts h3 {
+      font-size: 1.8rem;
+      color: #3d2c8d;
+      margin-bottom: 30px;
+    }
+    .post-card {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 15px auto;
+      max-width: 600px;
+      text-align: left;
+    }
+    .post-card h4 {
+      margin: 0;
+      font-size: 1.4rem;
+      color: #3d2c8d;
+    }
+    .post-card p {
+      margin: 10px 0 15px 0;
+      line-height: 1.4;
+    }
+    .about-section {
+      background-color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .about-section h3 {
+      font-size: 1.8rem;
+      color: #3d2c8d;
+      margin-bottom: 20px;
+    }
+    .about-section p {
+      max-width: 720px;
+      margin: 0 auto 20px auto;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
     footer {
       background-color: #eee;
       padding: 20px;
+      text-align: center;
       font-size: 0.9rem;
-      color: #333;
+    }
+    footer img {
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-
   <header>
     <nav>
       <a href="index.html">Início</a>
       <a href="sobre.html">Sobre</a>
       <a href="postagens.html">Postagens</a>
-      <a href="https://wa.me/5542998340012" target="_blank">Contato</a>
-      <a href="mailto:smouchaileh@gmail.com?subject=Denúncia%20via%20Blog%20do%20Muka" target="_blank">Denuncie</a>
+      <a href="contato.html">Contato</a>
+      <a href="denuncie.html">Denuncie</a>
     </nav>
   </header>
 
   <section class="banner">
-    <img src="imagens/index-capa-blog-do-muka.png" alt="Capa do Blog do Muka" />
-    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfrj1B98pZgNtgJbiBwr-5FBSm_nkzCRo8tdkFj01x7aDwArg/viewform" target="_blank">Inscreva-se</a>
+    <img src="imagens/index-capa-blog-do-muka.png" alt="Capa do Blog do Muka mostrando Ponta Grossa" />
+    <h2>Informação que constrói consciência</h2>
+    <p>Analiso a política local com base na experiência, transparência e compromisso com você, cidadão de Ponta Grossa. Aqui você encontra análises, denúncias e opiniões que não se vendem.</p>
+    <a class="btn" href="postagens.html">Leia as postagens</a>
+    <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfrj1B98pZgNtgJbiBwr-5FBSm_nkzCRo8tdkFj01x7aDwArg/viewform" target="_blank">Assine a newsletter</a>
+  </section>
+
+  <section class="latest-posts">
+    <h3>Últimas postagens</h3>
+
+    <div class="post-card">
+      <h4>De onde vêm os valores que financiam a política?</h4>
+      <p>Um olhar sobre emendas, articulações e interesses por trás da governabilidade e do financiamento político.</p>
+      <a class="btn" href="post7.html">Leia mais</a>
+    </div>
+
+    <div class="post-card">
+      <h4>IPTU, ITBI e Taxa de Lixo: quando o aumento chega antes do debate</h4>
+      <p>Entenda como os impostos municipais foram reajustados rapidamente e o que isso revela sobre transparência e diálogo em Ponta Grossa.</p>
+      <a class="btn" href="post6.html">Leia mais</a>
+    </div>
+
+    <div class="post-card">
+      <h4>Vitória do Grupo Fibroviva – Lei da Fibromialgia</h4>
+      <p>Reconhecimento legal da fibromialgia foi aprovado em 2025. Direitos, empatia e mobilização em destaque.</p>
+      <a class="btn" href="post4.html">Leia mais</a>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h3>Sobre o blog</h3>
+    <p>Criei o Blog do Muka para expor o que muitos escondem. Nosso objetivo é democratizar a informação sobre política local, promover a transparência e incentivar a participação popular nas decisões de Ponta Grossa.</p>
+    <p>Quer saber mais? <a href="sobre.html">Clique aqui</a> ou <a href="contato.html">fale comigo</a>.</p>
   </section>
 
   <footer>
     <p>&copy; 2025 Blog do Muka. Todos os direitos reservados.</p>
     <p>Inscreva-se via QR Code abaixo:</p>
-    <img src="qr_inscricao_blogdomuka.png" alt="QR Code Inscrição" width="160" />
+    <img src="qr_inscricao_blogdomuka.png" alt="QR Code para inscrição na newsletter" width="160" />
+    <p>Siga: <a href="https://instagram.com/samuelsleiman" target="_blank">Instagram</a> | <a href="https://facebook.com/CidadedePontaGrossa" target="_blank">Facebook</a> | <a href="https://wa.me/5542998340012" target="_blank">WhatsApp</a></p>
   </footer>
-
 </body>
 </html>
