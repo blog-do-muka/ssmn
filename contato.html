@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contato - Blog do Muka</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato – Blog do Muka</title>
+  <meta name="description" content="Entre em contato com Samuel Sleiman via formulário seguro. Deixe sua mensagem e retornaremos em breve." />
+  <!-- se você já tem um arquivo de estilos, mantenha esta linha -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <header>
     <div class="container">
       <h1>Blog do Muka</h1>
@@ -25,38 +26,30 @@
 
   <main class="container">
     <h2>Fale com o Muka</h2>
-    <p>Quer trocar uma ideia? Mandar sugestão, crítica ou só bater um papo político sincero? Fala comigo por onde for melhor pra você:</p>
+    <p>Use o formulário abaixo para enviar sua mensagem. Você receberá uma cópia por e‑mail e, se desejar, responderemos diretamente.</p>
 
-    <ul>
-      <li>📸 Instagram: <a href="https://instagram.com/samuelsleiman" target="_blank">@samuelsleiman</a></li>
-      <li>📘 Facebook: <a href="https://facebook.com/CidadedePontaGrossa" target="_blank">Cidade de Ponta Grossa</a></li>
-      <li>📱 WhatsApp: <a href="https://wa.me/5542998340012" target="_blank">(42) 99834-0012</a></li>
-    </ul>
+    <!-- Substitua SEU_FORM_ID pelo código de seu serviço de formulários -->
+    <form action="https://formspree.io/f/SEU_FORM_ID" method="POST">
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" name="nome" required><br><br>
 
-    <p>Se quiser, você também pode usar o formulário abaixo (visual apenas, em breve funcional):</p>
+      <label for="email">E‑mail:</label><br>
+      <input type="email" id="email" name="_replyto" required><br><br>
 
-    <form onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso! Em breve conectaremos com o sistema.');">
-      <label for="nome">Nome:</label><br />
-      <input type="text" id="nome" name="nome" required /><br /><br />
+      <label for="assunto">Assunto:</label><br>
+      <input type="text" id="assunto" name="assunto" required><br><br>
 
-      <label for="email">E-mail:</label><br />
-      <input type="email" id="email" name="email" required /><br /><br />
+      <label for="mensagem">Mensagem:</label><br>
+      <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
 
-      <label for="mensagem">Mensagem:</label><br />
-      <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br /><br />
-
-      <button type="submit" class="btn">Enviar</button>
+      <button type="submit" class="btn">Enviar mensagem</button>
+      <p style="font-size:0.8rem;margin-top:10px;">Nunca compartilharemos seu e‑mail. Substitua <strong>SEU_FORM_ID</strong> pelo ID gerado pelo serviço de formulários para ativar o envio.</p>
     </form>
   </main>
 
   <footer>
-    <p>&copy; 2025 Blog do Muka. Todos os direitos reservados.</p>
-    <p>Siga: 
-      <a href="https://instagram.com/samuelsleiman" target="_blank">Instagram</a> |
-      <a href="https://facebook.com/CidadedePontaGrossa" target="_blank">Facebook</a> |
-      <a href="https://wa.me/5542998340012" target="_blank">WhatsApp</a>
-    </p>
+    <p>© 2025 Blog do Muka. Todos os direitos reservados.</p>
+    <p>Siga: <a href="https://instagram.com/samuelsleiman" target="_blank">Instagram</a> | <a href="https://facebook.com/CidadedePontaGrossa" target="_blank">Facebook</a> | <a href="https://wa.me/5542998340012" target="_blank">WhatsApp</a></p>
   </footer>
-
 </body>
 </html>
