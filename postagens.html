@@ -1,4 +1,4 @@
-   <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -60,6 +60,12 @@
     .leia-mais-btn:hover {
       background-color: #2a1c6b;
     }
+    #noResults {
+      text-align: center;
+      font-style: italic;
+      margin: 30px 0;
+      display: none;
+    }
   </style>
 </head>
 <body>
@@ -78,7 +84,7 @@
     </div>
   </header>
 
-  <!-- Campo de busca por palavra-chave -->
+  <!-- Campo de busca -->
   <div style="text-align:center; margin-top: 20px;">
     <input type="text" id="searchInput" placeholder="Buscar post por palavra-chave..." style="padding:8px; width:60%; border:1px solid #ccc; border-radius:6px;">
   </div>
@@ -93,6 +99,7 @@
     <button class="filter-btn" data-filter="Fiscalização">Fiscalização</button>
     <button class="filter-btn" data-filter="Impostos">Impostos</button>
     <button class="filter-btn" data-filter="Editorial">Editorial</button>
+    <button class="filter-btn" data-filter="Democracia">Democracia</button>
   </div>
 
   <main class="container">
@@ -133,23 +140,28 @@
       <a href="post5.html" class="leia-mais-btn">Leia mais →</a>
     </div>
 
-    <div class="post" data-tags="Impostos Transparência Política local">
-  <h3>IPTU, ITBI e Taxa de Lixo: Quando o aumento chega antes do debate</h3>
-  <p>Entenda como o reajuste de impostos municipais foi aprovado rapidamente e o que isso revela sobre o diálogo entre Executivo e Legislativo.</p>
-  <div class="tags">
-    <span class="tag">Impostos</span>
-    <span class="tag">Transparência</span>
-    <span class="tag">Política local</span>
-  </div>
-  <a href="post6.html" class="leia-mais-btn">Leia mais →</a>
+    <div class="post" data-tags="Impostos Transparência Política-local">
+      <h3>IPTU, ITBI e Taxa de Lixo: Quando o aumento chega antes do debate</h3>
+      <p>Entenda como o reajuste de impostos municipais foi aprovado rapidamente e o que isso revela sobre o diálogo entre Executivo e Legislativo.</p>
+      <div class="tags"><span class="tag">Impostos</span><span class="tag">Transparência</span><span class="tag">Política-local</span></div>
+      <a href="post6.html" class="leia-mais-btn">Leia mais →</a>
     </div>
-     
-    <div class="post" data-tags="Verbas públicas Bastidores">
+
+    <div class="post" data-tags="Verbas-públicas Bastidores">
       <h3>De onde vêm os valores que financiam a política?</h3>
       <p>Um olhar sobre emendas, articulações e interesses por trás da governabilidade.</p>
-      <div class="tags"><span class="tag">Verbas públicas</span><span class="tag">Bastidores</span></div>
+      <div class="tags"><span class="tag">Verbas-públicas</span><span class="tag">Bastidores</span></div>
       <a href="post7.html" class="leia-mais-btn">Leia mais →</a>
     </div>
+
+    <div class="post" data-tags="Democracia Liberdade Legislação">
+      <h3>Medidas atípicas e liberdade no Estado Democrático</h3>
+      <p>Até onde pode ir o Judiciário? Uma análise imparcial do devido processo e dos limites institucionais.</p>
+      <div class="tags"><span class="tag">Democracia</span><span class="tag">Liberdade</span><span class="tag">Legislação</span></div>
+      <a href="post8.html" class="leia-mais-btn">Leia mais →</a>
+    </div>
+
+    <p id="noResults">Nenhuma postagem encontrada com esse termo.</p>
   </main>
 
   <footer>
@@ -161,11 +173,12 @@
     </p>
   </footer>
 
-  <!-- Scripts de filtro por tag e busca -->
+  <!-- Scripts de filtro e busca -->
   <script>
     const buttons = document.querySelectorAll(".filter-btn");
     const posts = document.querySelectorAll(".post");
     const searchInput = document.getElementById("searchInput");
+    const noResults = document.getElementById("noResults");
 
     buttons.forEach(btn => {
       btn.addEventListener("click", () => {
@@ -173,27 +186,33 @@
         btn.classList.add("active");
         const filter = btn.getAttribute("data-filter");
 
+        let anyVisible = false;
         posts.forEach(post => {
           const tags = post.getAttribute("data-tags");
           if (filter === "all" || tags.includes(filter)) {
             post.classList.remove("hidden");
+            anyVisible = true;
           } else {
             post.classList.add("hidden");
           }
         });
+        noResults.style.display = anyVisible ? "none" : "block";
       });
     });
 
     searchInput.addEventListener("keyup", function () {
       const filter = searchInput.value.toLowerCase();
+      let anyVisible = false;
       posts.forEach(post => {
         const text = post.textContent.toLowerCase();
         if (text.includes(filter)) {
           post.classList.remove("hidden");
+          anyVisible = true;
         } else {
           post.classList.add("hidden");
         }
       });
+      noResults.style.display = anyVisible ? "none" : "block";
     });
   </script>
 </body>
