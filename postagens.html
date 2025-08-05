@@ -100,6 +100,7 @@
     <button class="filter-btn" data-filter="Impostos">Impostos</button>
     <button class="filter-btn" data-filter="Editorial">Editorial</button>
     <button class="filter-btn" data-filter="Democracia">Democracia</button>
+    <button class="filter-btn" data-filter="Religião">Religião</button>
   </div>
 
   <main class="container">
@@ -147,17 +148,17 @@
       <a href="post6.html" class="leia-mais-btn">Leia mais →</a>
     </div>
 
-    <div class="post" data-tags="Verbas-públicas Bastidores">
-      <h3>De onde vêm os valores que financiam a política?</h3>
-      <p>Um olhar sobre emendas, articulações e interesses por trás da governabilidade.</p>
-      <div class="tags"><span class="tag">Verbas-públicas</span><span class="tag">Bastidores</span></div>
-      <a href="post7.html" class="leia-mais-btn">Leia mais →</a>
-    </div>
-
     <div class="post" data-tags="Democracia Liberdade Legislação">
       <h3>Medidas atípicas e liberdade no Estado Democrático</h3>
       <p>Até onde pode ir o Judiciário? Uma análise imparcial do devido processo e dos limites institucionais.</p>
       <div class="tags"><span class="tag">Democracia</span><span class="tag">Liberdade</span><span class="tag">Legislação</span></div>
+      <a href="post7.html" class="leia-mais-btn">Leia mais →</a>
+    </div>
+
+    <div class="post" data-tags="Religião Saúde Espiritualidade">
+      <h3>Corpo como templo: escolhas e responsabilidade espiritual</h3>
+      <p>Reflexão sobre saúde física e espiritual à luz de princípios de fé e autocuidado consciente.</p>
+      <div class="tags"><span class="tag">Religião</span><span class="tag">Saúde</span><span class="tag">Espiritualidade</span></div>
       <a href="post8.html" class="leia-mais-btn">Leia mais →</a>
     </div>
 
@@ -182,7 +183,8 @@
 
     buttons.forEach(btn => {
       btn.addEventListener("click", () => {
-        document.querySelector(".filter-btn.active").classList.remove("active");
+        const activeBtn = document.querySelector(".filter-btn.active");
+        if (activeBtn) activeBtn.classList.remove("active");
         btn.classList.add("active");
         const filter = btn.getAttribute("data-filter");
 
