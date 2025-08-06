@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Agora tem especialistas: solução ou maquiagem?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="O Governo Federal lançou o programa 'Agora tem Especialistas'. Mas será que mutirões e turnos estendidos resolvem o problema crônico do SUS?">
+  <meta property="og:title" content="Agora tem especialistas: solução ou maquiagem?" />
+  <meta property="og:description" content="O Governo Federal lançou o programa 'Agora tem Especialistas'. Mas será que mutirões e turnos estendidos resolvem o problema crônico do SUS?" />
+  <meta property="og:image" content="https://blogdomuka.com.br/imagens/post11-agoratem.png" />
+  <meta property="og:url" content="https://blogdomuka.com.br/agora-tem-especialistas.html" />
+  <meta property="og:type" content="article" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Blog do Muka</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="postagens.html">Postagens</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="denuncie.html">Denuncie</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <img src="imagens/post11-agoratem.png" alt="Agora tem especialistas" style="max-width:100%; border-radius:10px; margin-bottom:20px;">
+    <h2>Agora tem especialistas: solução ou maquiagem?</h2>
+    <p><strong>Por Muka</strong> – Publicado em 2025</p>
+
+    <p>O Governo Federal lançou o programa <strong>"Agora tem Especialistas"</strong>, prometendo ampliar o atendimento em hospitais, UPAs e policlínicas aos fins de semana. Uma medida que parece positiva — e é.</p>
+
+    <p>Mas como sempre, é preciso olhar além do marketing. Será que essa medida pontual resolve os principais problemas da população?</p>
+
+    <ul>
+      <li>🩺 A fila da regulação anda?</li>
+      <li>🧪 Os exames de imagem têm vaga?</li>
+      <li>⏳ O especialista ainda demora 8 meses?</li>
+    </ul>
+
+    <p>Turnos estendidos são bem-vindos, mas não podem ser usados como maquiagem para disfarçar falhas estruturais da saúde pública. A população precisa de soluções permanentes, e não apenas mutirões esporádicos com foto e banner.</p>
+
+    <p>👀 <a href="https://www.gov.br/agoratemespecialistas" target="_blank">Saiba mais sobre o programa oficial</a></p>
+
+    <p><strong>📣 O Blog do Muka segue acompanhando, fiscalizando e ouvindo quem realmente importa: o cidadão.</strong></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Blog do Muka. Todos os direitos reservados.</p>
+    <p>Siga:
+      <a href="https://instagram.com/samuelsleiman" target="_blank">Instagram</a> |
+      <a href="https://facebook.com/CidadedePontaGrossa" target="_blank">Facebook</a> |
+      <a href="https://wa.me/5542998340012" target="_blank">WhatsApp</a>
+    </p>
+  </footer>
+</body>
+</html>
